@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,7 +17,10 @@
                     <form>
                         <div class="group">
                         <select name="select" id="select">
-                        <option value="All categories">All categories</option>
+                        <option value="drop">All categories</option>
+                        <option value="drop">Jewellery</option>
+                        <option value="drop">Home</option>
+                        <option value="drop">Art</option>
                         </select>
                         <input type="text" name="search" id="search" placeholder="Search anything">
                         </div>
@@ -24,22 +28,20 @@
                     </form>
                 </div>
                     <div class="user">
-                        <nav class="user">
                             <ul class="about">
                                 <li id="user-account"><a href="/assignment/account.html"><img src=user.jpg width="19" height="19"> About</a></li>
                                 <li id="user-shopping"><a href="/assignment/shopping.html"><img src=bag.jpg width="20" height="20">Shopping</a></li>
                             </ul>                              
-                        </nav>
                     </div>
             
                 <div class="tabs">
-                    <a href="jewellery.html">Jewelry & Accessories</a>
-                    <a href="clothing.html">Clothing & Shoes</a>
-                    <a href="home.html">Home & Living</a>
-                    <a href="wedding.html">Wedding & Party</a>
-                    <a href="toys.html">Toys & Entertainment</a>
-                    <a href="art.html">Art & Collectibles</a>
-                    <a href="craft.html">Craft Supplies & Tools</a>
+                    <a href="#">Jewelry & Accessories</a>
+                    <a href="#">Clothing & Shoes</a>
+                    <a href="#">Home & Living</a>
+                    <a href="#">Wedding & Party</a>
+                    <a href="#">Toys & Entertainment</a>
+                    <a href="#">Art & Collectibles</a>
+                    <a href="#">Craft Supplies & Tools</a>
                 </div>
             </div>
         </div>
@@ -47,16 +49,20 @@
         <main>
             <div class="images">
                 <div class="row">
-                    <a href="clothing.html"><img src="./unsplash_mO-_iF_FkCk.jpg" id="shoe">
+                    <a href="#"><img src="./unsplash_mO-_iF_FkCk.jpg" id="shoe">
+                        <div class="cloth">Clothing & shoes</div>
                     </a>
-                    <a href="art.html"><img src="./clrful.jpg" id="colrful">
+                    <a href="#"><img src="./chair.jpg" id="chair">
+                        <div class="home">Home & living</div>
                     </a>
-                    <a href="home.html"><img src="./chair.jpg" id="chair">
+                    <a href="#"><img src="./art.png" id="colrful">
+                        <div class="art">Art & collectibles</div>
                     </a>
                 </div>
             </div>
             <div class="images2">
                 <div id="chair1">
+                    <img src="./heart.png" width="20px" height="auto" id="heart">
                     <img src="./Rectangle 19.png">
                     <h5>Colors</h5>
                     <img src="./ggreen.png" width="16px" height="16px">
@@ -70,6 +76,7 @@
                     <h6>195,13 $</h6>
                 </div>
                 <div id="lamp">
+                    <img src="./heart.png" width="20px" height="auto" id="heart">
                     <img src="./lamp.png">
                     <h5>Colors</h5>
                     <img src="./ggreen.png" width="16px" height="16px">
@@ -81,6 +88,7 @@
                     <h6>458,43 $</h6>
                 </div>
                 <div id="cushion">
+                    <img src="./heart.png" width="20px" height="auto" id="heart">
                     <img src="./Rectangle 19 (1).png">
                     <h5>Colors</h5>
                     <img src="./blue.png" width="16px" height="16px">
@@ -90,6 +98,7 @@
                     <h6>789,67 $</h6>
                 </div>
                 <div id="chair2">
+                    <img src="./heart.png" width="20px" height="auto" id="heart">
                     <img src="./Rectangle 19.png">
                     <h5>Colors</h5>
                     <img src="./ggreen.png" width="16px" height="16px">
@@ -124,6 +133,9 @@
                 <h6 id="dets2">Only on polka.</h6>
             </div>
                 <div class="slide">
+                    <div id="left3">
+                        <img src="./Left expand.png" width="30px" height="30px" >
+                    </div>
                     <div class="slideimg">
                         <div class="lion">
                             <img src="./lion 1.png">
@@ -158,41 +170,51 @@
                             <p>Life Style</p>
                         </div>
                     </div>
+                    <div id="right3">
+                        <img src="./Right expand.png" width="30px" height="30px" id="arrowr2">
+                    </div>                    
                 </div>
             </div>
         <div class="randomtext2">
             <p id="dets3">Discover unique hand-picked items</p>
         </div>
         <div class="slide2">
-            <div id="bag1">
-                <img src="./bag1.png">
-                <h5>Distressed Tote Leather Bag Leather Bag</h5>
-                <h4>216,27 $</h4>
+            <div id="left" class="arrow">
+                <img src="./Left expand.png" width="30px" height="auto">
             </div>
-            <div id="ch2">
-                <img src="./ch2.png">
-                <h5>Womens Cognac Leather Elastic Straps</h5>
-                <h4>195,13 $</h4>
-            </div>
-            <div id="bag3">
-                <img src="./bag3.png">
-                <h5>Distressed Tote Leather Bag Leather Bag</h5>
-                <h4>910,76 $</h4>
-            </div>
-            <div id="shoe4">
-                <img src="./shoe4.png">
-                <h5>High Top Canvas Shoes</h5>
-                <h4>341,02 $</h4>
-            </div>
-            <div id="ring5">
-                <img src="./ring5.png">
-                <h5>Rose Gold Moissanite Vintage Wedding Ring Set</h5>
-                <h4>3.344,13 $</h4>
-            </div>
-            <div id="bangle6">
-                <img src="./bangle6.png">
-                <h5>Rose Gold Moissanite Vintage Wedding Ring Set</h5>
-                <h4>789,09 $</h4>
+                <div id="bag1" class="product-item">
+                    <img src="./bag1.png">
+                    <h5>Distressed Tote Leather Bag Leather Bag</h5>
+                    <h4>216,27 $</h4>
+                </div>
+                <div id="ch2" class="product">
+                    <img src="./ch2.png">
+                    <h5>Womens Cognac Leather Elastic Straps</h5>
+                    <h4>195,13 $</h4>
+                </div>
+                <div id="bag3" class="product">
+                    <img src="./bag3.png">
+                    <h5>Distressed Tote Leather Bag Leather Bag</h5>
+                    <h4>910,76 $</h4>
+                </div>
+                <div id="shoe4" class="product">
+                    <img src="./shoe4.png">
+                    <h5>High Top Canvas Shoes</h5>
+                    <h4>341,02 $</h4>
+                </div>
+                <div id="ring5" class="product">
+                    <img src="./ring5.png">
+                    <h5>Rose Gold Moissanite Vintage Wedding Ring Set</h5>
+                    <h4>3.344,13 $</h4>
+                </div>
+                <div id="bangle6" class="product">
+                    <img src="./bangle6.png">
+                    <h5>Rose Gold Moissanite Vintage Wedding Ring Set</h5>
+                    <h4>789,09 $</h4>
+                </div>   
+            <div id="right" class="arrow">
+                <img src="./Right expand.png"width="30px" height="auto">
+            </div> 
             </div>
         </div>
         <div class="tabs2">
@@ -215,23 +237,38 @@
                 <a href="#">Wedding Gifts</a>
             </div>
         </div>
+        <br>
         <div class="images4">
             <div class="row6">
-            <divi id="sh">
-                <img src="./sh1.png" width="312px" height="418">
-            </divi>
+                <img src="./sh1.png" width="270px" height="418px" id="sh1">
             <div id="lp">
                 <img src="./lp2.png" width="200px" height="auto">
+                <h5>Colors</h5>
+                <img src="./dots.png">
+                <p>Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
+                <h6>195,13 $</h6>
             </div>
             <div id="ph">
-                <img src="./ph4.png" width="200px" height="200px">
+                <img src="./ph4.png" width="200px" height="auto">
+                <h5>Colors</h5>
+                <img src="./dots.png">
+                <p>Iphone 12 128 GB (Red) Apple </p>
+                <h6>458,43 $</h6>
             </div>
             <div id="cm">
-                <img src="./cm4.png" width="200px" height="200px">
+                <img src="./cm4.png" width="200px" height="auto">
+                <h5>Colors</h5>
+                <img src="./dots.png">
+                <p>Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
+                <h6>789,67 $</h6>
             </div>
             </div>
         </div>
-        <div class="slide2">
+        <div class="slide3">
+
+            <div id="left2">
+                <img src="./Left expand.png" width="30px" height="30px" >
+            </div>
             <div id="bag1">
                 <img src="./bag1.png">
                 <h5>Distressed Tote Leather Bag Leather Bag</h5>
@@ -262,6 +299,9 @@
                 <h5>Rose Gold Moissanite Vintage Wedding Ring Set</h5>
                 <h4>789,09 $</h4>
             </div>
+            <div id="right2" class="arrow">
+                <img src="./Right expand.png"width="30px" height="auto">
+            </div> 
         </div>
         <div class="purple">
             <p>Yes!<br> Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on Commerce.</p>
@@ -269,7 +309,11 @@
                 <div class="input2">
                     <input type="text" name="email" id="email" placeholder="Drop your email">
                     <input type="submit" name="subscribe" id="subscribe" value="subscribe">
-                    </div>
+                </div>
+                <div class="input3">
+                    <input type="text" name="email" id="email" placeholder="Drop your email">
+                    <input type="submit" name="subscribe" id="subscribe" value="subscribe">
+                </div>
                 <div id="form2t">
                 <a href="#">First order only. You’re ready?</a>
                 </div>
@@ -285,10 +329,10 @@
                     <div class="table">
                         <table>                    
                             <tr>
-                                <th><a href="#">Shop</a></th>
-                                <th><a href="#">Sell</a></th>
-                                <th><a href="#">About</a></th>
-                                <th><a href="#">Help</a></th>
+                                <th>Shop</th>
+                                <th>Sell</th>
+                                <th>About</th>
+                                <th>Help</th>
                             </tr>
                             <tr>
                                 <td><a href="#">Gift cards</a></td>
@@ -323,21 +367,53 @@
                     <div class="last">
                         <h5>E-commerce</h5>
                         <h6>Cricklewood,London <br>NW2 6qg, Uk</h6>
-                        <img src="./facebook@512px.png">
-                        <img src="./twitter@512px.png">
-                        <img src="./linkedin@512px.png">
-                        <img src="./dribbble@512px.png"><br>
+                        <a href="www.facebook.com"><img src="./facebook@512px.png"></a>
+                        <a href="www.twitter.com"><img src="./twitter@512px.png"></a>
+                        <a href="www.linkedin.com"><img src="./linkedin@512px.png"></a>
+                        <a href="www.dribble.com"><img src="./dribbble@512px.png"></a><br>
                     </div>
+                </div>
+                <div class="footer3">
+                    <select name="select" id="shopp">
+                    <option value="Shop">Shop</option>
+                    </select>
+                    <select name="select" id="aboutt">
+                    <option value="About">About</option>
+                    </select>
+                </div>
+                <div class="footer4">
+                    <p>Polka, Inc.</p>
+                    <p>Policies</p>
+                    <p>Investors</p>
+                    <p>Careers</p>
+                    <p>Press</p>
+                </div>
+                <div class="footer5">
+                    <select name="select" id="selll">
+                    <option value="Sell">Sell</option>
+                    </select>
+                    <select name="select" id="helpp">
+                    <option value="Help">Help</option>
+                    </select>
+                </div>
+                <div class="footer6">
+                    <a href="https:www.facebook.com"><img src="./facebook@512px.png" width="30px"></a>
+                    <a href="https:www.twitter.com"><img src="./twitter@512px.png" width="30px"></a>
+                    <a href="https:www.linkedin.com"><img src="./linkedin@512px.png" width="30px"></a>
+                    <a href="https:www.dribble.com"><img src="./dribbble@512px.png" width="30px"></a>
                 </div>
                 <div class="end2">
                     <div id="copyright">
                         &copy 2022 Commerce, Inc.
                     </div>
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms of use</a>
-                    <a href="#">Cookies</a>
+                    <div class="policy">
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms of use</a>
+                        <a href="#">Cookies</a>
+                    </div>
                     <div id="scroll">
-                        <h6>scroll to top</h6>
+                        <h6>scroll to top <img src="./Arrow_top (1).png" width="15px" height="auto"></h6>
+                        
                     </div>
                 </div>
                 </div>

@@ -62,6 +62,10 @@ header {
     border: none;
     padding: 10px;
     margin: 10px;
+    background-image: url('./search.png'); 
+    background-size: 20px 20px; 
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
 }
 
 .form input[type="submit"] {
@@ -124,9 +128,8 @@ header {
 
 .tabs a:hover {
     color: #EB6D20;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
     font-weight: bold;
+    border-bottom: 2px solid #EB6D20;
 }
 
 main {
@@ -138,12 +141,46 @@ main {
         justify-content: center;
         gap: 20px;
     }
+@media screen and (max-width:600px) {
+    .images .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .images .row a .cloth,
+    .images .row a .home,
+    .images .row a .art {
+        display: none;
+    }
+}
 
 .row img{
     width:100%;
     height:auto;
 }
-
+.row a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.cloth {
+    position: absolute;
+    top: 360px;
+    right: 75%; 
+    transform: translateX(-100%);
+}
+.home {
+    position: absolute;
+    top: 360px;
+    left: 45%; 
+    transform: translateX(-100%);
+}
+.art {
+    position: absolute;
+    top: 360px;
+    left: 80%; 
+    transform: translateX(-100%);
+}
 .images2 {
     display: flex;
     justify-content: space-between;
@@ -152,26 +189,29 @@ main {
 
 .images2 div {
     padding: 30px;
-    flex: 1;
     margin-right: 20px;
     padding-bottom: 120px;
     width:312px;
     height: 418px;
 }
+.images2 img{
+    margin-top: -20px;
+}
 .images2 p{
     width: 100%;
     font-weight: 200;
     font-size: small;
+    margin-top: -0px;
 }
 
 .images2 h6{
     font-weight: 400;
     font-size: medium;
-    margin-top: 0;
+    margin-top: -10px;
 }
 
 .images2 img {
-    width: calc(50%-264px);
+    width: calc(40%-264px);
 }
 .images2 #chair1{
     background-color: #D3FBD9;
@@ -184,6 +224,19 @@ main {
 }
 .images2 #chair2{
     background-color: #FDF0AB;
+}
+.images2 #heart{
+    margin-left: 240px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+@media screen and (max-width:600px){
+    .images2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 .images3 {
     margin-left: 60px;
@@ -249,6 +302,14 @@ main {
 #one h6,#two h6,#three h6{
     width: 176px;
 }
+@media screen and (max-width:600px){
+    .images3{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
 .text{
     clear: both;
     margin-left:70px ;
@@ -263,7 +324,16 @@ main {
     text-align: left;
     margin-top: 30px;
 }
-
+@media screen and (max-width:600px){
+    .randomtext{
+        width: 300px;
+        text-align: left;
+    }
+    .randomtext2{
+        width:180px;
+        text-align: left;
+    }
+}
 .randomtext2 {
     text-align: left;
     margin-top: 20px;
@@ -291,18 +361,55 @@ main {
     border: 6px solid rgb(243, 243, 243);
     box-shadow: 2px 2px 10px grey;
     border-radius: 10px;
-    margin-right: 20px;
+    margin: 0 0 10px 10px;
 }
-
+@media screen and (max-width:600px){
+    .slideimg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    #left3 , #right3{
+        display: none;
+    }
+}
+#left3, #right3{
+    margin-top: 40px;
+}
+#right3{
+    margin-left:10px;
+}
+#left2, #right2{
+    margin-top:  100px;
+}
+#left2{
+    margin-right: -10px;
+}
+#right2{
+    margin-left:-30px;
+}
 .slide2 {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    position: relative;
+    padding-right: 30px;
+}
+#left{
+    margin-right: -10px;
+}
+#right{
+    margin-left: -10px;
 }
 .slide2 div {
     padding: 20px;
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px;
     justify-content: center;
 }
 .slide2 #bag1, #ch2, #bag3, #shoe4,#ring5,#bangle6 {
@@ -331,6 +438,19 @@ main {
     position: relative;
     top:8px;
 }
+@media screen and (max-width:600px){
+    .slide2{
+        display: flex;
+        flex-d;
+        justify-content: left;
+        height: 300px;
+    }
+}
+@media screen and (max-width:600px){
+    #left , #right{
+        display: none;
+    }
+}
 .tabs2{
     text-align: center;
     width:100%;
@@ -340,66 +460,166 @@ main {
     font-size: small;
     color:#3E3E3E;
     text-decoration: none;
+    border-bottom: 2px solid #d3d0cf;
     padding: 10px 20px;
     font-weight: 300;
+    width: 100px;
 }
 .tabs2 div{
     float: left;
     width: 200px;
     height: auto;
-    border-bottom: 1px solid #E9E9E9;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     margin: 10px 10px auto;
 }
 
 .tabs2 a:hover{
     color: #EB6D20;
+    border-bottom-color: #EB6D20;
     font-weight: 300;
+    transform: translate(0,-10px);
 }
-.images4 {
-    display: flex;
-    margin-top: 180px;
+.tabs2{
+    transition: 0.1s;
+}
+.tabs2 >div:hover{
+    transform: translate(0,-10px);
+}
+@media screen and (max-width:600px){
+    .tabs2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tabs2 > div:nth-child(n+3){
+        display: none;
+    }
+}
+.images4{
+    margin-top: 50px;
     position: relative;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
 }
 .images4 div {
-    padding: 20px;
-    flex: 1;
-    margin-right: 10px;
-    justify-content: space-between;
+    padding: 30px;
+    margin-right: 20px;
+    padding-bottom: 120px;
+    width:312px;
+    height: 418px;
 }
-.images4 #sh{
-    margin: 0 0 10px 10px;
+.row6{
+    padding: 30px;
+    width: 312px;
+    height: 418px;
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+    justify-content: left;
 }
-
-.images4 #lp{
-    background-color: #FBF7D3;
-    gap: 10px;
+#sh1{
+    margin-right: 20px;
+}
+.images4 p{
+    width: 100%;
+    font-weight: 200;
+    font-size: small;
+}
+.images4 h6{
+    font-weight: 400;
+    font-size: medium;
+    margin-top: 0;
 }
 .images4 #ph{
     background-color: #FFBDBD;
-    gap: 10px;
-    width: 312px;
-    height: 418px;
 }
 .images4 #cm{
     background-color: #C0ABFD;
-    gap: 10px;
-    width: 312px;
-    height: 418px;
 }
-.images4,.row6{
+.images4 #lp{
+    background-color: #FBF7D3;
+}
+@media screen and (max-width:600px){
+    .images4{
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .slide3 > div:not(:first-child){
+        display: none;
+    }
+    .slide3 > div:first-child ~ div {
+        display: block;
+        position: relative;
+        left: 0;
+        width: 200px;
+    }
+}
+.slide3 {
     display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.slide3 div {
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
     justify-content: center;
-    gap: 20px;
+}
+.slide3 #bag1, #ch2, #bag3, #shoe4,#ring5,#bangle6 {
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.114);
+    width: 200px;
+    height: 290px;
+}
+.slide3 #bag1 img, #ch2 img, #bag3 img, #shoe4 img,#ring5 img,#bangle6 img{
+    justify-content: center;
+    width: 174px;
+    height: auto;
+    position: relative;
+    top:
+}
+.slide3 h5{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.slide3 h4{
+    font-weight:400;
+    font-size: 14px;
+    position: relative;
+    bottom: 10px;
+}
+.slide3 #shoe4 h4{
+    position: relative;
+    top:8px;
 }
 
+@media screen and (max-width:600px){
+    .slide3{
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+        height: 300px;
+    }
+
+    .slide3 > div:not(:first-child){
+        display: none;
+    }
+    .slide3 > div:first-child ~ div {
+        display: block;
+        position: relative;
+        left: 0;
+        width: 200px;
+    }
+}
 .purple {
     background-color: #5959D9;
     color: white;
     text-align:left;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -413,11 +633,12 @@ main {
     border-radius: 10px;
 }
 .input2{
-    border: 2px solid rgb(248, 244, 244);
+    border: 2px solid white;
     background-color: white;
     border-radius: 50px;
     width: max-content;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .input2 input[type="submit"]{
@@ -426,6 +647,7 @@ main {
     background-color: #EB6D20;
     font-weight: lighter;
     color: white;
+    cursor: pointer;
     width: 130px;
     height: 30px;
     background-image: url('./rarrow.png'); 
@@ -442,22 +664,73 @@ main {
 #form2t{
     text-align: center;
 }
+
 #form2t a{
     color: white;
     font-weight: 300;
     text-align:center ;
     font-size: 10px ;
 }
+.input3{
+    width: 200px;
+}
+.input3 input[type="submit"]{
+    border: none;
+    border-radius: 50px;
+    background-color: #EB6D20;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    background-image: url('./rarrow.png'); 
+    background-size: 10px 10px; 
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+}
+.input3 input[type="text"]{
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:600px){
+    .input2{
+        display: none;
+    }
+    #form2t{
+        display: none;
+    }
+}
+@media screen and (min-width:600px){
+    .input3{
+        display: none;
+    }
+}
 .end{
     width: 100%;
+    background-color: #F5F6F8;
 }
 .end p{
     font-weight: 300;
     font-size: 14px;
     padding: 20px;
-    background-color:#F5F6F8;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .end p {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        width: 250px; 
+        margin: 0 auto; 
+        padding: 0; 
+    }
+}
+
 table {
     width: 80%;
     text-align: left;
@@ -521,6 +794,19 @@ table tr{
     font-size: small; 
     color: #3E3E3E;
 }
+@media screen and (max-width:600px){
+    .end2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .end2 > div:not(:first-child){
+        display: none;
+    }
+    .footer2{
+        display: none;
+    }
+}
 #scroll{
     float: right;
     margin-right:20px; 
@@ -529,4 +815,66 @@ table tr{
     color: #3E3E3E;
     font-weight: 300;
     font-size: 14px;
+}
+.footer3 select{
+    width: 288px;
+    height: 48px;
+    border-radius: 50px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+}
+.footer3 #shopp, #aboutt{
+    border: none;
+}
+.footer3 #shopp{
+    background-color: #F5F6F8;
+}
+.footer3 #aboutt{
+    background-color: #EB6D20;
+    color: white;
+}
+.footer4 p{
+    border: none;
+    border-bottom: 2px solid #F5F6F8;
+    padding-bottom: 5px;
+    margin:0 30px;
+    font-weight: lighter;
+}
+.footer5 select{
+    width: 288px;
+    height: 48px;
+    border-radius: 50px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+}
+.footer5 #selll, #helpp{
+    border: none;
+}
+
+.footer5 #selll, #helpp{
+    background-color: #F5F6F8;
+}
+.footer6{
+    background-color: #F5F6F8;
+    width: 288px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 10px auto;
+}
+.footer6 a{
+    margin: 0 10px;
+}
+@media screen and (min-width:600px){
+    .footer2{
+        display: block;
+    }
+    .footer3,.footer4,.footer5, .footer6{
+        display: none;
+    }
 }
